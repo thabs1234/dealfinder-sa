@@ -42,7 +42,7 @@ a{color:inherit}
 /* ---------- ticker: the one moving thing on the page ---------- */
 .ticker{border-bottom:1px solid var(--rule);background:var(--ink);color:var(--paper);
   overflow:hidden;white-space:nowrap}
-.ticker-track{display:inline-block;padding:7px 0;font-size:.76rem;letter-spacing:.09em;
+.ticker-track{display:inline-block;padding:8px 0;font-size:.8rem;font-weight:500;letter-spacing:.1em;
   text-transform:uppercase;animation:slide 34s linear infinite}
 .ticker-track span{padding:0 26px}
 .ticker-track span::after{content:"◆";color:var(--signal);padding-left:26px;font-size:.6rem}
@@ -65,15 +65,16 @@ a{color:inherit}
 
 .page-h1{font-family:var(--display);font-weight:400;font-size:clamp(2.4rem,6vw,4rem);
   line-height:1;letter-spacing:-.02em;margin-bottom:10px}
-.page-h1 + .section-head h2{font-size:clamp(1.6rem,3.4vw,2.2rem);border-bottom-width:1px}
+.page-h1 + .section-head{border-bottom-width:1px}
 
 /* ---------- section head ---------- */
 .section{padding:76px 0}
 .section h2{font-family:var(--display);font-weight:400;font-size:clamp(2rem,5vw,3.4rem);
-  line-height:1;letter-spacing:-.02em;padding-bottom:18px;border-bottom:2px solid var(--ink);
-  margin-bottom:8px}
-.section-head{display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap}
-.section-head .stamp{font-size:.72rem;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-30)}
+  line-height:1;letter-spacing:-.02em;padding-bottom:18px;margin-bottom:8px}
+.section-head{display:flex;align-items:baseline;justify-content:space-between;gap:20px;
+  flex-wrap:wrap;border-bottom:2px solid var(--ink)}
+.section-head .stamp{font-size:.72rem;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-30);
+  padding-bottom:20px}
 
 /* ---------- deal list: rows, not cards ---------- */
 .grid{display:grid;gap:0;margin-top:38px}
@@ -89,7 +90,9 @@ a{color:inherit}
   letter-spacing:-.01em;transition:color .15s}
 .blurb{color:var(--ink-60);font-size:.92rem;margin-top:4px}
 .disc{font-weight:700;margin-top:6px}
-.card .btn{margin-top:0;align-self:center;white-space:nowrap;padding:11px 22px;font-size:.82rem}
+.card .btn{margin-top:0;align-self:center;white-space:nowrap;padding:11px 22px;font-size:.82rem;
+  background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.card .btn:hover{background:var(--signal-solid);color:#fff;border-color:var(--signal-solid)}
 
 /* ---------- shop notice ---------- */
 .card.shop{grid-template-columns:1fr;gap:12px;text-align:left;padding:44px 0}
